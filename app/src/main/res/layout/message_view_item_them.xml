@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal" >
+    <ImageView
+        android:contentDescription="Message Item Image"
+        android:id="@+id/MessageItemImageView"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:layout_marginLeft="4dp"
+        android:layout_marginRight="4dp"
+        android:layout_gravity="bottom"
+        android:src="@drawable/ic_launcher" />
+    <LinearLayout
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:orientation="vertical">
+        <TextView
+            android:id="@+id/MessageItemDate"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp"
+            android:layout_marginBottom="1dp"
+            android:layout_gravity="left"
+            android:textAppearance="?android:attr/textAppearanceSmall"/>
+        <TextView
+            android:id="@+id/MessageItemBody"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/grey_message"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:autoLink="all"
+	        android:layout_marginLeft="4dp"
+	        android:layout_marginTop="4dp"
+	        android:layout_marginBottom="2dp"
+	        android:layout_marginRight="4dp"        
+            android:layout_gravity="left"/>
+
+    </LinearLayout>    
+    <!-- space filler potentially for error icons or something-->
+    <RelativeLayout 
+        android:layout_width="50dp"
+        android:layout_height="wrap_content" 
+        android:gravity="right"/>
+</LinearLayout>

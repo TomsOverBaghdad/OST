@@ -1,0 +1,86 @@
+<resources>
+
+    <!--&lt;!&ndash; Base application theme. &ndash;&gt;-->
+    <!--<style name="AppTheme" parent="android:Theme.Holo.Light.DarkActionBar">-->
+        <!--<item name="android:actionBarStyle">@style/MyActionBar</item>-->
+        <!--<item name="android:actionBarTabStyle">@style/MyActionBarTabs</item>-->
+    <!--</style>-->
+
+    <!--&lt;!&ndash; ActionBar styles &ndash;&gt;-->
+    <!--<style name="MyActionBar"-->
+        <!--parent="@android:style/Widget.Holo.Light.ActionBar.Solid.Inverse">-->
+        <!--<item name="android:background">#FF8800</item>-->
+    <!--</style>-->
+
+    <!--&lt;!&ndash; ActionBar tabs styles &ndash;&gt;-->
+    <!--<style name="MyActionBarTabs"-->
+        <!--parent="@android:style/Widget.Holo.ActionBar.TabView">-->
+        <!--&lt;!&ndash; tab indicator &ndash;&gt;-->
+        <!--<item name="android:background">#FF8800</item>-->
+    <!--</style>-->
+
+
+        <style name="Theme.Ostactionbar" parent="@android:style/Theme.Holo.Light.DarkActionBar">
+            <item name="android:actionBarItemBackground">@drawable/selectable_background_ostactionbar</item>
+            <item name="android:popupMenuStyle">@style/PopupMenu.Ostactionbar</item>
+            <item name="android:dropDownListViewStyle">@style/DropDownListView.Ostactionbar</item>
+            <item name="android:actionBarTabStyle">@style/ActionBarTabStyle.Ostactionbar</item>
+            <item name="android:actionDropDownStyle">@style/DropDownNav.Ostactionbar</item>
+            <item name="android:actionBarStyle">@style/ActionBar.Solid.Ostactionbar</item>
+            <item name="android:actionModeBackground">@drawable/cab_background_top_ostactionbar</item>
+            <item name="android:actionModeSplitBackground">@drawable/cab_background_bottom_ostactionbar</item>
+            <item name="android:actionModeCloseButtonStyle">@style/ActionButton.CloseMode.Ostactionbar</item>
+
+            <!-- Light.DarkActionBar specific -->
+            <item name="android:actionBarWidgetTheme">@style/Theme.Ostactionbar.Widget</item>
+
+        </style>
+
+        <style name="ActionBar.Solid.Ostactionbar" parent="@android:style/Widget.Holo.Light.ActionBar.Solid.Inverse">
+            <!--<item name="android:background">@drawable/ab_solid_ostactionbar</item>-->
+            <item name="android:background">@color/orange</item>
+            <item name="android:backgroundStacked">@drawable/ab_stacked_solid_ostactionbar</item>
+            <item name="android:backgroundSplit">@drawable/ab_bottom_solid_ostactionbar</item>
+            <item name="android:progressBarStyle">@style/ProgressBar.Ostactionbar</item>
+        </style>
+
+        <style name="ActionBar.Transparent.Ostactionbar" parent="@android:style/Widget.Holo.ActionBar">
+            <item name="android:background">@drawable/ab_transparent_ostactionbar</item>
+            <item name="android:progressBarStyle">@style/ProgressBar.Ostactionbar</item>
+        </style>
+
+        <style name="PopupMenu.Ostactionbar" parent="@android:style/Widget.Holo.ListPopupWindow">
+            <item name="android:popupBackground">@drawable/menu_dropdown_panel_ostactionbar</item>
+        </style>
+
+        <style name="DropDownListView.Ostactionbar" parent="@android:style/Widget.Holo.ListView.DropDown">
+            <item name="android:listSelector">@drawable/selectable_background_ostactionbar</item>
+        </style>
+
+        <style name="ActionBarTabStyle.Ostactionbar" parent="@android:style/Widget.Holo.ActionBar.TabView">
+            <item name="android:background">@drawable/tab_indicator_ab_ostactionbar</item>
+        </style>
+
+        <style name="DropDownNav.Ostactionbar" parent="@android:style/Widget.Holo.Spinner">
+            <item name="android:background">@drawable/spinner_background_ab_ostactionbar</item>
+            <item name="android:popupBackground">@drawable/menu_dropdown_panel_ostactionbar</item>
+            <item name="android:dropDownSelector">@drawable/selectable_background_ostactionbar</item>
+        </style>
+
+        <style name="ProgressBar.Ostactionbar" parent="@android:style/Widget.Holo.ProgressBar.Horizontal">
+            <item name="android:progressDrawable">@drawable/progress_horizontal_ostactionbar</item>
+        </style>
+
+        <style name="ActionButton.CloseMode.Ostactionbar" parent="@android:style/Widget.Holo.ActionButton.CloseMode">
+            <item name="android:background">@drawable/btn_cab_done_ostactionbar</item>
+        </style>
+
+        <!-- this style is only referenced in a Light.DarkActionBar based theme -->
+        <style name="Theme.Ostactionbar.Widget" parent="@android:style/Theme.Holo">
+            <item name="android:popupMenuStyle">@style/PopupMenu.Ostactionbar</item>
+            <item name="android:dropDownListViewStyle">@style/DropDownListView.Ostactionbar</item>
+        </style>
+
+    <color name="orange">#FF9800</color>
+    <color name="dark_orange">#7F4C00</color>
+</resources>

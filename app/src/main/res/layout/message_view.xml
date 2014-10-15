@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:orientation="vertical">
+    <RelativeLayout 
+        android:id="@+id/NewMessageView"
+        android:visibility="gone"
+        android:layout_width="fill_parent"
+    	android:layout_height="wrap_content">
+	    <Button
+	        android:id="@+id/MessageSearchContactsButton"
+	        android:layout_alignParentRight="true"
+	        android:layout_width="wrap_content"
+	        android:layout_height="wrap_content"/>
+	       	<!-- android:onClick="onContactsButtonClick"/>
+	        android:text="SC" /-->
+	    <EditText
+	        android:id="@+id/MessageAddressEditText"
+	        android:layout_alignParentTop="true"
+	        android:layout_toLeftOf="@id/MessageSearchContactsButton"
+	        android:layout_alignBottom="@id/MessageSearchContactsButton"
+	        android:layout_width="fill_parent"
+	        android:layout_height="wrap_content"
+	        android:hint="Who do you want to text?" />
+    </RelativeLayout>
+    
+    <ListView
+        android:id="@+id/MessageListView"
+        android:layout_width="fill_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:gravity="top"
+        android:divider="@null"
+        android:background="@android:color/white"
+        android:transcriptMode="alwaysScroll">
+    </ListView>
+    
+    <LinearLayout
+        android:id="@+id/MessageBodyLayout"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal" >
+		<Button
+            android:id="@+id/MiscButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="bottom"
+	        android:background="@android:drawable/ic_menu_camera" />
+        <EditText
+            android:id="@+id/MessageBodyEditText"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:maxLines="5"
+            android:layout_gravity="bottom"
+            android:background="@null"
+            android:hint="What's on your mind?" >
+        </EditText>
+
+        <Button
+            android:id="@+id/MessageSendButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="bottom"
+            android:background="@android:drawable/ic_menu_send" 
+            android:onClick="onSendButtonClick"/>
+
+    </LinearLayout>
+    
+</LinearLayout>

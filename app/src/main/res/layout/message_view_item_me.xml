@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<!-- THIS IS THE VIEW FOR ME MESSAGES -->
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal" >
+    <!-- space filler potentially for error icons or something-->
+    <RelativeLayout 
+        android:layout_width="50dp"
+        android:layout_height="wrap_content" 
+        android:gravity="left">
+        <Button 
+            android:layout_width="wrap_content"
+        	android:layout_height="wrap_content" 
+            android:id="@+id/OSTButton"
+            android:onClick="OST"
+            android:visibility="gone"
+            android:src="@drawable/ic_launcher_ost"/>
+    </RelativeLayout>
+    <LinearLayout
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:orientation="vertical">
+        <TextView
+            android:id="@+id/MessageItemDate"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp"
+            android:layout_marginBottom="1dp"
+            android:layout_gravity="end"
+            android:textAppearance="?android:attr/textAppearanceSmall"/>
+        <TextView
+            android:id="@+id/MessageItemBody"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/light_orange_message"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:autoLink="all"
+	        android:layout_marginLeft="4dp"
+	        android:layout_marginTop="4dp"
+	        android:layout_marginBottom="2dp"
+	        android:layout_marginRight="4dp"
+            android:layout_gravity="end"/>
+
+    </LinearLayout>    
+    <ImageView
+        android:contentDescription="Message Item Image"
+        android:id="@+id/MessageItemImageView"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:layout_marginLeft="4dp"
+        android:layout_marginRight="4dp"
+        android:layout_gravity="bottom"
+        android:src="@drawable/ic_launcher" />
+</LinearLayout>
